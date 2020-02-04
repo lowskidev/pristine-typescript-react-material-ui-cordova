@@ -1,3 +1,20 @@
+# Apache Cordova mobile framework
+
+You will have to have Apache Cordova https://cordova.apache.org installed fully use this repo you can do this by runnning the following command in your terminal `npm install -g cordova` 
+
+This repo comes with a cordova app already bundeled with it, which resides in the `cordovaapp` directory where you will find a file named `config.xml`. Inside that file you can edit your: app name, app description , author information which is recommended since the default is `HelloCordova`
+
+Once you execute `npm run build` it will build your pristine app and copy it over to the `cordovaapp/www/` directory.
+
+Then you can add your mobile app platform by typing: `npm run add-android` for Android and `npm run add-ios` for iOS apps.
+this will tell cordova to build your project for the specific platform.
+
+If you already have a platform added in your cordova project and need to updated it, you just need to run `npm run prepare` and it will update the source in your cordova project for all platforms. Or if you want to just updated a specific platform you can also. `npm run prepare-android` for Android or `npm run prepare-ios` for iOS platform.
+
+Your platofrm project folders you can open in either Android Studio or xCode depending. Will be in `cordovaapp/platforms/`
+
+Future updates will include automatic circleCI deployments and support for other platforms as requested.
+
 # Pristine Typescript React Materal UI
 
 An open source repository in its original condition. It leverages Typescript, React, Material UI theming, moment.js and i18next to give a good starting point for new and existing projects.
