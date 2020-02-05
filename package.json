@@ -6,7 +6,12 @@
   "main": "build/index.js",
   "scripts": {
     "start": "react-scripts start",
-    "build": "react-scripts build",
+    "build": "react-scripts build && cp -av -R ./build/* ./cordovaapp/www",
+    "add-android": "cd ./cordovaapp && cordova platform add android",
+    "add-ios": "cd ./cordovaapp && cordova platform add ios",
+    "prepare": "cd ./cordovaapp && cordova prepare",
+    "prepare-android": "cd ./cordovaapp && cordova prepare android",
+    "prepare-ios": "cd ./cordovaapp && cordova prepare ios",
     "lint": "tslint --fix -p .",
     "test": "npm run lint && react-scripts test --coverage --passWithNoTests"
   },
