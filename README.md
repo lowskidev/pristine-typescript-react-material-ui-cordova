@@ -1,4 +1,4 @@
-# Apache Cordova mobile framework
+# How to use the Apache Cordova mobile framework with Pristine Typescript React Materal UI
 
 You will need to have Apache Cordova https://cordova.apache.org installed fully to use this repo properly. You can do this by runnning the following command in your terminal `npm install -g cordova` 
 
